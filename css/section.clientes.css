@@ -1,0 +1,48 @@
+#clientes{
+    padding: 2em;
+}
+
+.logos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.logos div{
+    transition: .2s;
+    padding: 10px;
+    scale: 1;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000011;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: solid 10px transparent;
+}
+
+.logos div:hover{
+    background-color: #00000011;
+    transition: .1s;
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border: solid 10px #00000022;
+}
+
+.logos div img{
+    width: 200px;
+    height: 100px;
+    max-width: 100%;
+}
+
+.logos div p{
+    margin-top: 10px;
+}

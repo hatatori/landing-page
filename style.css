@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url("./css/variables.css");
+@import url("./css/nav.css");
+@import url("./css/footer.css");
+@import url("./css/section.clientes.css");
+@import url("./css/section.precos.css");
+@import url("./css/section.start.css");
+
+/* font-family: 'Belanosima', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+.shadow{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}

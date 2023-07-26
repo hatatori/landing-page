@@ -1,0 +1,25 @@
+footer{
+    background-color: var(--primary);   
+    display: flex;
+    padding: 1em 2em;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: space-between;
+}
+
+footer nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+}
+
+footer i {
+    margin: 0 5px;
+}
+

@@ -1,0 +1,16 @@
+nav{
+    background-color: var(--primary);
+    display: flex;
+}
+
+
+nav a{
+    color: var(--light);
+    padding: 20px;
+    flex: 1;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}

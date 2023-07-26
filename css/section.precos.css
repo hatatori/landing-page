@@ -1,0 +1,73 @@
+:root{
+    --blue: #2479c5
+}
+
+.sides{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 2em;
+}
+
+#precos{
+    margin: auto;
+    margin: auto;
+}
+
+#precos * {
+    font-family: 'Lato', sans-serif;
+}
+
+#precos .card .title{
+    text-align: center;
+    padding: 30px 0;
+}
+
+#precos .card{
+    /* box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d; */
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    background-color: var(--light);
+    transition: .5s;
+    width: 350px;
+}
+
+#precos .card:hover{
+    box-shadow: 0 14px 28px #00000040, 0 10px 10px rgba(0,#00000038);
+    transition: .5s;
+}
+
+#precos .card ul{
+    /* background-color: var(--blue); */
+    background-color: var(--primary);
+    display: grid;
+    gap: 50px;
+    padding: 20px;
+    color: var(--light);
+}
+
+#precos .card li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#precos pre{
+    white-space: break-spaces;
+    font-size: 14px;
+}
+
+#precos .card div{
+    text-align: right;
+    color: var(--blue);
+    padding: 20px;
+    
+}
+
+#precos .card h3{
+    color: var(--blue);
+    padding: 10px;
+}
+
+#precos .card h1{ font-size: 2em; }
+#precos .card p{font-size: 1.1em;}
+#precos .card small{font-size: 0.5em;}

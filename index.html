@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <script defer src="./js/vue.js"></script> -->
+    <script defer src="./script.js"></script>
+
+    <!-- site -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+        
+    <header>
+        <nav>
+            <a href="#start">Logo</a>
+            <a href="#solucoes">Soluções</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#preços">Preços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main id="app">
+        <section id="start">
+            <div>
+                <h1>Welcome to Landkit Develop anything..</h1>
+                <h4>Build a beautiful, modern website with flexible Bootstrap components built from scratch.</h4>
+                <button>Acessar</button>
+            </div>
+            <div>
+                <img src="./imgs/ilustration.png">
+            </div>
+        </section>
+
+        <section id="solucoes"></section>
+
+        <section id="clientes">
+            <div class="logos">
+                <div v-for="items in logos">
+                    <img :src="items.img">
+                    <p>{{items.text}}</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="precos" class="sides">
+
+            <div v-for="plano in planos" class="card">
+                <h3 class="title">{{plano.title}}</h3>
+                <ul><pre>{{trim(plano.head)}}</pre></ul>
+                <div>
+                    <h1>{{plano.price1}}</h1>
+                    <h3>{{plano.price2}}</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="title">Enterprise</h3>
+                <ul>
+                    <li>Preços especiais para grandes volumes.</li>
+                    <li>Prioridade no suporte técnico.</li>
+                    <li>Gestor de conta dedicado.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="contato"></section>
+
+    </main>
+
+    <footer>
+        <div>
+            <i class="fa-solid fa-copyright"></i>
+            <p>copyright todos os direitos reservados</p>
+        </div>
+        <nav>
+            <a href="#start">Logo</a>
+            <a href="#solucoes">Soluções</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#preços">Preços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+
+</body>
+</html>
